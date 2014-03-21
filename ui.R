@@ -6,7 +6,7 @@ shinyUI(fluidPage(
       sliderInput("r", "Radius :", min = 0.05, max = 1,
                   value = 0.2, step = 0.05),
       radioButtons("picture", "Picture:",
-                  c("face", "chainring"))
+                  c("chainring", "face"))
     )),
     column(4,
       imageOutput("image1", height = 300),
